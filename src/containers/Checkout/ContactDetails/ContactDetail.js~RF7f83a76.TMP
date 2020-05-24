@@ -76,11 +76,10 @@
       const order ={
         ingredients:this.props.ingredients,
         price:this.props.totalPrice,
-        orderData: formData,
-		userId:this.props.userId
+        orderData: formData
       }
 
-	  this.props.onOrderBurger(order,this.props.token)
+	  this.props.onOrderBurger(order)
 		
     }
 
@@ -134,17 +133,15 @@ if ( this.props.loading ) {
   const mapStateToProps = state =>{
 
 	return {
-		ingredients:state.burger.ingredients,
-		totalPrice:state.burger.totalPrice,
-		loading:state.order.loading,
-		token:state.auth.token,
-		userId:state.auth.userId
+		ingredients:state.ingredients,
+		totalPrice:state.totalPrice,
+		loading:state.loading
 		
 	}
 } 
   const mapDispatchtoProps = dispatch =>{
   return{
-	onOrderBurger:(orderData,token)=>{dispatch(orderaction.purchaseburgerinit(orderData,token))}
+	onOrderBurger:(orderData)=>{dispatch(orderaction.purchaseburgerinit(orderData))}
   }}
 
 

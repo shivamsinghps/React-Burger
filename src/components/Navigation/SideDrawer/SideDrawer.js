@@ -14,10 +14,10 @@ const sideDrawer = (props)=> {
   return (
     <Fragment>
     <Backdrop show={props.show} modalclosed={props.closed} />
-    <div className={sidemotion.join(' ')}>
+    <div className={sidemotion.join(' ')} onClick={props.closed}>
     <div className={classes.Logo}><Logo /></div>
     <nav>
-      <NavigationItems/>
+      <NavigationItems isAuthenticated={props.Auth}/>
     </nav>
     </div>
     </Fragment>

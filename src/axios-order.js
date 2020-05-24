@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL:'paste ur db url',
+  baseURL:'[URL]',
 })
 
 export default instance

@@ -20,7 +20,6 @@ const order = (props)=> {
   const orders_output= orderdata.map(odata =>(
     <span key={odata.name} className={classes.Ingredients}>{odata.name} : {odata.value} </span>
   ))
-console.log(orderdata);
   return (
     <div className={classes.Order}>
     <p><strong>Ingredients</strong> <em>{ingrediens_output}</em> </p>

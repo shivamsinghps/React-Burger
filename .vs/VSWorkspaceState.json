@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\containers",
+    "\\src\\containers\\Auth",
+    "\\src\\containers\\BurgerBuilder",
+    "\\src\\containers\\Checkout",
+    "\\src\\containers\\Checkout\\ContactDetails",
+    "\\src\\containers\\withErrorHandle",
+    "\\src\\store",
+    "\\src\\store\\reducers"
+  ],
+  "SelectedNode": "\\src\\App.js",
+  "PreviewInSolutionExplorer": false
+}
